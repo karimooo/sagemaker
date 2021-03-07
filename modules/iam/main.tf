@@ -118,7 +118,7 @@ data "aws_iam_policy_document" "sagemaker_role_policy" {
     effect = "Allow"
     actions = ["iam:PassRole"]
     resources = [
-      "${aws_iam_role.default.arn}"
+      "aws_iam_role.default.arn"
     ]
     condition {
       test = "StringEquals"
@@ -131,7 +131,7 @@ data "aws_iam_policy_document" "sagemaker_role_policy" {
     effect = "Allow"
     actions = ["iam:GetRole"]
     resources = [
-      "${aws_iam_role.default.arn}"
+      "aws_iam_role.default.arn"
     ]
   }
 }

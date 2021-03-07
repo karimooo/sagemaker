@@ -1,7 +1,7 @@
 provider "aws" {
   region = var.aws_region
   profile = var.aws_profile
-  version = "2.23.0"
+  #version = "2.23.0"
 }
 
 module "iam" {
@@ -23,7 +23,7 @@ module "sagemaker" {
   source = "../modules/sagemaker"
 
   sagemaker_notebook_name = var.sagemaker_notebook_name
-  aws_iam_role = "${module.iam.iam_role_arn}"
-  bucket_name = "${module.s3.bucket_name}"
+  aws_iam_role = module.iam.iam_role_arn
+  bucket_name = module.s3.bucket_name
 }
 
