@@ -1,18 +1,14 @@
 ## Machine Learning Infrastructure with Terraform
 
-This example show how to set up end to end demo architecture for predicting boston housing dataset with Machine Learning using `Amazon SageMaker` and `Terraform`. 
+How to set up architecture with Machine Learning using `Amazon SageMaker` and `Terraform`. 
 
 ## Terraform version
 
-Ensure your `Terraform` version is as follows (some modifications would be required if you run other `Terraform` versions):
+Ensure your `Terraform` version 
 ```sh
 $ cd main
 $ terraform --version
-Terraform v0.12.6
-+ provider.aws v2.23.0
-+ provider.template v2.1.2
 ```
-To download `Terraform`, visit https://releases.hashicorp.com/terraform/
 
 ## Setup steps
 
